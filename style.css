@@ -3,13 +3,45 @@ html {
 }
 
 body {
-  font-family: sans;
+  padding: 20px;
+  font-family: sans-serif;
 }
 
 p {
-  margin: 0.2em;
+  margin-bottom: 2px;
 }
 
 #affiliation {
   float: right;
+}
+
+#photo {
+  float: left;
+  margin-right: 1%;
+}
+
+#details {
+  float: left;
+}
+
+#details #name {
+  font-size: large;
+  font-weight: bold;
+}
+
+#details #email {
+}
+
+#details #address {
+  margin-top: 1em;
+}
+
+.divider {
+  clear: both;
+}
+
+.page-header {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
 }
