@@ -1,0 +1,15 @@
+html {
+  margin: 10px;
+}
+
+body {
+  font-family: sans;
+}
+
+p {
+  margin: 0.2em;
+}
+
+#affiliation {
+  float: right;
+}
