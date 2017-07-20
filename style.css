@@ -19,21 +19,8 @@ ul {
   list-style-type: circle;
 }
 
-#date {
-  float: right;
-}
-
-#affiliation {
-  float: right;
-}
-
 #photo {
-  float: left;
   margin-right: 1%;
-}
-
-#details {
-  float: left;
 }
 
 #details #name {
@@ -41,11 +28,16 @@ ul {
   font-weight: bold;
 }
 
-#details #email {
-}
-
 #details #address {
   margin-top: 1em;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 .divider {
