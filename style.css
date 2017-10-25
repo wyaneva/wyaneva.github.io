@@ -49,3 +49,8 @@ ul {
   padding-bottom: 9px;
   border-bottom: 1px solid #eee;
 }
+
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
