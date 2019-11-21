@@ -2,42 +2,81 @@
 <html>
 
 <head>  
-  <title> Vanya Yaneva | The University of Edinburgh </title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title> Vanya Yaneva | University of Edinburgh </title>
 </head>
 
 <body>
 
+  <div id="main" class="container">
+
+    <nav class="navbar navbar-expand-md">
+        <!-- Toggle button for main navigation -->
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main-navigation">
+          <div id="main-navigation" class="mx-auto order-0">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#research-interests">RESEARCH INTERESTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publications">PUBLICATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#talks-posters">TALKS & POSTERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teaching">TEACHING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conference">CONFERENCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#awards">AWARDS</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+
   <!-- Profile: Photo, name, address, affiliations-->
-  <div id="profile">
+  <div id="profile" class="content">
+
+    <div class="row">
+    <div class="col-sm-4">
     <img 
-       class="left"
        id="photo" 
        width=200
        src="images/vanya-shetland.jpeg" 
        alt="vyaneva"
     >
-
-    <div id="details" class="left">
-      <div id="name">Vanya Yaneva</div>
-      <!-- email is saved in reverse, but displayed correctly -->
-      <div id="email" class="reverse">ku.ca.de@avenay.aynav</div>
-    
-      <div id="address">
-        Informatics Forum, 4.23<br>
-        10 Crichton Street <br>
-        EH8 9AB Edinburgh <br>
-        United Kindgdom 
-      </div>
-
-      <div id="address">
-        <a href="vyaneva-cv.pdf">CV</a>
-        <br>
-        <a href="https://github.com/wyaneva">GitHub</a>
-      </div>
     </div>
 
-    <div id="affiliation" class="right">
+    <div id="about" class="col-sm-8">
+    <h3> VANYA YANEVA </h3>
+      <p>
+      I am a PhD candidate in Software Engineering at the University of Edinburgh.
+      My background is in High Performance Computing and I hold an MSc from the <a href="http://www.epcc.ed.ac.uk">Edinburgh Parallel Computing Centre</a>. 
+      </p>
+
+      <p>
+      I also have three years of experience as a software engineer in industry.
+      </p>
+    </div>
+    </div>
+
+    <div id="email" class="reverse">ku.ca.de@avenay.aynav</div>
+    <a href="vyaneva-cv.pdf">CV</a>
+    <a href="https://github.com/wyaneva">GitHub</a>
+
+    <!--div id="affiliation">
       <a href="http://www.inf.ed.ac.uk">
         <img 
          src="images/informatics.jpg" 
@@ -75,35 +114,30 @@
          height="30" 
          alt="LFCS">
       </a>
-   </div>
+   </div-->
   </div>
 
-  <div class="divider"></div>
-
-  <!-- About Me -->
-  <h3 class="page-header"> About me </h3>
-      <p>
-      I am a PhD student at the CDT in Pervasive Parallelism at the University of Edinburgh.
-      My background is in High Performance Computing and I hold an MSc from the <a href="http://www.epcc.ed.ac.uk">Edinburgh Parallel Computing Centre</a>. 
-      </p>
-
-      <p>
-      I also have three years of experience as a software engineer in industry.
-      </p>
-
   <!-- Research Interests -->
-  <h3 class="page-header">Research interests</h3>
+  <div id="research-interests" class="content">
+  <h3 class="page-header">RESEARCH INTERESTS</h3>
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
       <p>
-      My research interests are in the areas of software testing, software engineering, parallel architectures, programming models and compilers.
+      My research interests are in the areas of <b>software testing</b>, <b>software engineering</b>, <b>parallel architectures</b>, <b>programming models</b> and <b>compilers</b>.
       </p>
 
       <p>
-      I am currently looking into ways to accelerate the execution of large application test suites by running test cases in parallel on heterogeneous architectures.
+      My PhD thesis is on novel methods for acceleration of large test suites by running tests in parallel on GPU threads.
       </p>
 
       <p>
       My supervisors are <a href="http://homepages.inf.ed.ac.uk/arajan/">Dr Ajitha Rajan</a> and <a href="http://homepages.inf.ed.ac.uk/cdubach/">Dr Christophe Dubach</a>.
       </p>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+  </div>
 
   <!-- Publications -->
   <h3 class="page-header"> Publications </h3>
@@ -354,6 +388,13 @@
     </li>
   </ul>
 
+  </div>
+
+  <script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
 
 </body>
 
