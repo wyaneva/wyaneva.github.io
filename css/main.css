@@ -12,6 +12,10 @@
 }
 
 /*-- General --*/
+a {
+  color: black;
+  font-weight: bold;
+}
 
 h3 {
   text-align: center;
@@ -29,11 +33,6 @@ body {
   background-size: cover;
 }
 
-#photo{
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 #about{
   padding-top: 2%;
   padding-right: 10%;
@@ -49,3 +48,11 @@ body {
   text-align: justify;
   padding:3%;
 }
+
+.padded-photo{
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 50%;
+}
+
+
