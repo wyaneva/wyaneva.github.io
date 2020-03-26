@@ -55,4 +55,7 @@ body {
   max-width: 50%;
 }
 
-
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
