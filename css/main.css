@@ -52,10 +52,11 @@ body {
 .padded-photo{
   padding-left: 5%;
   padding-right: 5%;
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .reverse {
+  display: inline;
   unicode-bidi: bidi-override;
   direction: rtl;
 }
