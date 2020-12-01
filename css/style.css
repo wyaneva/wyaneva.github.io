@@ -19,19 +19,6 @@ ul {
   list-style-type: circle;
 }
 
-#photo {
-  margin-right: 1%;
-}
-
-#details #name {
-  font-size: large;
-  font-weight: bold;
-}
-
-#details #address {
-  margin-top: 1em;
-}
-
 .right {
   float: right;
 }
